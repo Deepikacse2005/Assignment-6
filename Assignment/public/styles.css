@@ -1,0 +1,119 @@
+/* General styles for body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('./images/ocean-3605547_1920.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensure background covers the whole page */
+    background-position: center; /* Center the background */
+    background-repeat: no-repeat; /* Prevent tiling */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Remove scrolling */
+}
+
+/* Styling for the form container */
+.container {
+    max-width: 400px; /* Increase max width for better readability */
+    padding: 30px; /* Increased padding for a more spacious layout */
+    background: rgba(255, 255, 255, 0.9); /* Slightly higher transparency */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    border-radius: 12px; /* Softer rounded corners */
+    text-align: center; /* Center the text */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Hover effect for the container */
+.container:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Styling for heading */
+h1 {
+    font-size: 1.8rem; /* Slightly bigger heading */
+    margin-bottom: 25px; /* More space below heading */
+    color: #333; /* Darker color for the heading */
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column; /* Vertical form layout */
+    align-items: center;
+}
+
+/* Input field styles */
+input {
+    margin: 12px 0;
+    padding: 12px;
+    border: 1px solid #ddd; /* Lighter border */
+    border-radius: 6px; /* Softer rounded corners */
+    width: 100%; /* Full width */
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: #f9f9f9; /* Subtle background color */
+    transition: border-color 0.3s ease; /* Smooth border change */
+}
+
+/* Focus effect on input fields */
+input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none;
+}
+
+/* Button styling */
+button {
+    padding: 12px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 6px; /* Softer corners */
+    cursor: pointer;
+    width: 100%; /* Full width */
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #218838;
+}
+
+/* Styling for additional buttons */
+.btn {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 12px 18px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px; /* Rounded corners */
+    width: calc(50% - 10px); /* Responsive width */
+    text-align: center;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for .btn */
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Small screen responsiveness */
+@media (max-width: 480px) {
+    .container {
+        width: 90%; /* Make container fit smaller screens */
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+
+    .btn {
+        width: 100%; /* Make buttons full width on small screens */
+        margin: 10px 0;
+    }
+}
